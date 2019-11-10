@@ -1,7 +1,11 @@
 package main;
 
-import parser.*;
+import parser.metaweather.*;
+import parser.previsionmeteo.*;
+
 import affichage.*;
+
+
 import java.io.IOException;
 
 public class Main {
@@ -15,7 +19,9 @@ public class Main {
 	
 		MetaWeather prevision = new MetaWeather(nomVille, nbjours);
 		
-		TableauSimple.afficher(prevision);
+		TableauSimple tab = new TableauSimple(prevision);
+		
+		tab.afficher();
     }
 	
 }

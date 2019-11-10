@@ -13,10 +13,12 @@ public class HttpConnection {
     
     public static StringBuffer returnStringBuffer(String stringUrl) throws IOException {
     	
-        BufferedReader reader;
-        String line;
-        StringBuffer responseContent = new StringBuffer();
+
+    	StringBuffer responseContent = new StringBuffer();
         try {
+            BufferedReader reader;
+            String line;
+            
         	
             URL url = new URL(stringUrl);
             connection = (HttpURLConnection) url.openConnection(); 

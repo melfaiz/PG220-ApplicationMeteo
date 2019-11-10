@@ -1,8 +1,9 @@
 package parser;
 
+
 public class Parser {
 	
-	String nom;
+	protected String nom;
 	protected String ville;
 	protected int nbJours;
 	protected float temperatures[] = new float[nbJours + 1];
