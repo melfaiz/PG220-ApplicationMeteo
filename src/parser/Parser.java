@@ -10,7 +10,7 @@ public class Parser {
 	protected String buffer;
 	
 	public float[] getTemperatures() {
-		return temperatures;
+		return this.temperatures;
 	}
 		
 	public String getBuffer() {
@@ -22,7 +22,7 @@ public class Parser {
 	}
 	
 	public String getVille() {
-		return ville;
+		return this.ville;
 	}
 
 	public int getNbJours() {

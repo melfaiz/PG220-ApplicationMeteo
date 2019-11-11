@@ -1,27 +1,22 @@
 package main;
 
-import parser.metaweather.*;
-import parser.previsionmeteo.*;
+import java.io.IOException;
 
 import affichage.*;
+import commande.*;
 
 
-import java.io.IOException;
+
 
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
 		
-		String nomVille = args[1];
-		 
-		int nbjours = Integer.parseInt(args[3]);		
+		Commande cmd = new Commande(args);
+		
+		Tableau tableau = new Tableau(cmd.getPrevisions());
 
-	
-		MetaWeather prevision = new MetaWeather(nomVille, nbjours);
-		
-		TableauSimple tab = new TableauSimple(prevision);
-		
-		tab.afficher();
+		tableau.afficher();
     }
 	
 }
