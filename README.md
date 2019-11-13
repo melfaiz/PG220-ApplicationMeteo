@@ -49,15 +49,7 @@ Chaque API possède sa propre documentation à laquelle vous pouvez avoir accès
 site correspondant. L’objectif de la deuxième livraison est de rajouter ces API dans
 l'agrégateur, de la manière suivante :
 shell$ java -jar weather.jar -l Bordeaux -j 3
-+-----+-----+-----+-----+
-| J+0 | J+1 | J+2 | J+3 |
-+-------------+-----+-----+-----+-----+
-| MetaWeather | 10° | 12° | 8° | 15° |
-+-------------+-----+-----+-----+-----+
-| ​P-Meteo ​ | ​11° | 11° | 9° | 18° |
-+-------------+-----+-----+-----+-----+
-| Y! Weather | ​10° | 11° | 10° | 17° |
-+-------------+-----+-----+-----+-----+
+
 Lors de cette livraison vous devez faire en sorte d’avoir un design qui rend l’ajout d’un
 nouveau flux météo le plus simple possible.
 
@@ -66,16 +58,6 @@ nouveau flux météo le plus simple possible.
 Pour la troisième livraison nous allons fournir un bulletin météo plus détaillé de la manière
 suivante.
 shell$ java -jar weather.jar -l Bordeaux -j 0
-+----------------+
-| J+0 |
-+-------------+----------------+
-| MetaWeather | 10° 69% 3km/h |
-+-------------+----------------+
-| ​P-Meteo ​ | ​11° 70% 24km/h |
-+-------------+----------------+
-| Y! Weather | ​10° 71% 10km/h |
-+-------------+----------------+
-
 
 Les informations supplémentaires par rapport à la première livraison doivent être :
 
